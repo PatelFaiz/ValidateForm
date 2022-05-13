@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+	
+	<header>
+		<link rel="stylesheet" href="style.css">
+		<title>Form Validation Using JS</title>
+	</header>
+	
+	<body>
+		<h3>Please fill the form...</h3>
+
+		<!-- When user will submit validateForm() will return true if data is correct. -->
+		<form action = "" method = "POST" name="myform" onsubmit="return validateForm()">
+
+			<div id="dname">
+				<label for="name">Name</label>
+				<input type="text" name = "fname"><b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+
+			<div id="demail">
+				<label for = "email">Email</label>
+				<input type = "email" name="femail" id="email"> <b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+			
+			<div id="dpassword">
+				<label for = "password">Password</label>
+				<input type = "password" id = "password" name="fpassword"><b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+
+			<div id="dcpassword">
+				<label for = "cpassword">Confirm Password</label>
+				<input type = "password" id = "cpassword" name="cpassword"><b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+			
+			<div id="dmobile">
+				<label for = "mobile">Mobile</label>
+				<input type = "number" id = "mobile" name="fmobile"><b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+			
+			<div id="ddob">
+				<label for = "dob">Date of birth</label>
+				<input type = "date" id = "dob" name="fdob"><b><span class="form-error"></span></b>
+				<br><br>
+			</div>
+			
+			<input type="submit" class="but" value = "Submit">
+		</form>
+
+		<script src = "index.js"></script>
+	</body>
+
+</html>
